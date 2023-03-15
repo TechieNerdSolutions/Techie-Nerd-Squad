@@ -13,26 +13,40 @@ JOBS = [
     'id': 2,
     'title': 'Data Scientist',
     'location': 'Lagos, Nigeria',
-    'salary': ' $150,000'
+    'salary': ' $300,000',
+    'requirements': 'Senior Data Scientist'
   },
   {
     'id': 3,
     'title': 'Frontend Engineer',
-    'location': 'Remote'
+    'location': 'Remote',
+    'requirements': 'Available for internship'
   },
   {
     'id': 4,
     'title': 'Backend Engineer',
     'location': 'San Francisco, USA',
-    'salary': '$150,000'
+    'salary': '$150,000',
+    'requirements': 'Senior Developer'
+  },
+  {
+    'id': 5,
+    'title': 'FullStack Engineer',
+    'location': 'San Francisco, USA',
+    'salary': '$200,000',
+    'requirements': 'Senior Developer'
   }
 ]
 
 @app.route("/")
 def tnsquad():
-    return render_template('home.html', 
-                           jobs=JOBS, 
+    return render_template('home.html',
+                           jobs=JOBS,
                            company_name='Techie Nerd Squad')
+
+@app.route("/contact")
+def contact():
+    return render_templeate('contact.html')
 
 @app.route("/api/jobs")
 def list_jobs():
