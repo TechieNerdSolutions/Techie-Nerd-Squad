@@ -1,2 +1,2 @@
-# Techie Nerd Squad Careers Wwebsite
-A careers website for TNS
+# Techie Nerd Squad  Website
+
